@@ -37,15 +37,15 @@
         android:id="@+id/tvResultHigh"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/item_margin"
+        android:layout_marginTop="8dp"
         android:gravity="top|start"
-        android:lineSpacingExtra="8dp"
-        tools:text="500: 0\n100: 0\n50: 0\n20: 0"
+        android:lineSpacingExtra="34sp"
         android:textColor="@color/black"
         android:textSize="@dimen/text_size_list"
         app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTotalAmount" />
+        app:layout_constraintTop_toBottomOf="@id/tvTotalAmount"
+        tools:text="500: 0\n100: 0\n50: 0\n20: 0" />
 
     <!-- Low Denominations (10, 5, 2, 1) -->
     <!-- Placed immediately below High to look like one list -->
@@ -53,14 +53,17 @@
         android:id="@+id/tvResultLow"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
         android:gravity="top|start"
-        android:lineSpacingExtra="8dp"
-        tools:text="10: 0\n5: 0\n2: 0\n1: 0"
+        android:lineSpacingExtra="34sp"
         android:textColor="@color/black"
         android:textSize="@dimen/text_size_list"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvResultHigh" />
+        app:layout_constraintTop_toBottomOf="@id/tvResultHigh"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="10: 0\n5: 0\n2: 0\n1: 0" />
 
     <!-- 4. RIGHT SIDE: Keypad Buttons -->
     <!-- Buttons set to wrap_content with minHeight to look like blocks -->
@@ -76,10 +79,12 @@
         android:textColor="@color/black"
         android:textSize="@dimen/text_size_keypad"
         app:backgroundTint="@color/button_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btn2"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@id/guideline_vertical"
-        app:layout_constraintTop_toBottomOf="@id/tvTotalAmount" />
+        app:layout_constraintTop_toBottomOf="@id/tvTotalAmount"
+        app:layout_constraintVertical_bias="0.40" />
 
     <Button
         android:id="@+id/btn2"
@@ -216,7 +221,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/keypad_spacing"
-        android:layout_marginTop="8dp"
         android:minHeight="@dimen/button_min_height"
         android:text="0"
         android:textColor="@color/black"
