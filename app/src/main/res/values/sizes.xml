@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Font Sizes -->
+    <dimen name="text_size_header">24sp</dimen>     <!-- For "Taka: 688" -->
+    <dimen name="text_size_keypad">22sp</dimen>     <!-- For the buttons 0-9 -->
+    <dimen name="text_size_clear">18sp</dimen>      <!-- For the CLEAR button -->
+    <dimen name="text_size_list">28sp</dimen>       <!-- For the result list (500: 1) -->
+
+    <!-- Margins and Padding -->
+    <dimen name="layout_margin">16dp</dimen>        <!-- Edge of screen -->
+    <dimen name="item_margin">8dp</dimen>           <!-- Space between elements -->
+    <dimen name="keypad_spacing">8dp</dimen>        <!-- Space between buttons -->
+    <dimen name="button_padding">16dp</dimen>       <!-- Inner padding of buttons -->
+
+    <dimen name="button_min_height">70dp</dimen>
+</resources>
